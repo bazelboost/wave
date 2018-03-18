@@ -19,13 +19,21 @@ cc_library(
 		"BOOST_ALL_NO_LIB=1"
 	],
 	deps = [
-		"@com_github_bazelboost_assert//:assert",
 		"@com_github_bazelboost_concept_check//:concept_check",
-		"@com_github_bazelboost_throw_exception//:throw_exception",
-		"@com_github_bazelboost_spirit//:spirit",
+		"@com_github_bazelboost_core//:core",
 		"@com_github_bazelboost_filesystem//:filesystem",
+		"@com_github_bazelboost_mpl//:mpl",
+		"@com_github_bazelboost_pool//:pool",
+		"@com_github_bazelboost_serialization//:serialization",
+		"@com_github_bazelboost_type_traits//:type_traits",
+		"@com_github_bazelboost_assert//:assert",
 		"@com_github_bazelboost_config//:config",
-		"@com_github_bazelboost_detail//:detail",
+		"@com_github_bazelboost_throw_exception//:throw_exception",
+		"@com_github_bazelboost_smart_ptr//:smart_ptr",
+		"@com_github_bazelboost_spirit//:spirit",
+		"@com_github_bazelboost_static_assert//:static_assert",
+		"@com_github_bazelboost_multi_index//:multi_index",
+		"@com_github_bazelboost_iterator//:iterator",
 		"@com_github_bazelboost_preprocessor//:preprocessor"
 	],
 )
